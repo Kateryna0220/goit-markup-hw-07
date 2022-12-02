@@ -124,6 +124,7 @@
         padding-bottom: 4px;
         text-align: left;
         color: var(--secondary-text-color);
+        display: block;
     }
 
     &__input {
@@ -148,6 +149,7 @@
         box-sizing: border-box;
         border-radius: 4px;
         margin-bottom: 20px;
+        resize: none;
     }
 
     &__textarea::placeholder {
@@ -157,54 +159,54 @@
 
         color: rgba(117, 117, 117, 0.5);
     }
+}
 
-    &__check-label {
-        margin-bottom: var(--standart-30px);
-    }
+.modal__check-label {
+    margin-bottom: var(--standart-30px);
+}
 
-    &__check-svgicon {
-        border: 2px solid var(--main-text-color);
-        border-radius: 2px;
-        margin-right: 8.38px;
-    }
+.modal-form-checkbox-icon {
+    border: 2px solid var(--main-text-color);
+    border-radius: 2px;
+    margin-right: 8.38px;
+}
 
-    &__check-useicon {
-        display: none;
-    }
+.modal__check-useicon {
+    display: none;
+}
 
-    &__check-input:checked~&__check-svgicon {
-        border: none;
-    }
+.modal__check-input:checked~.modal-form-checkbox-icon {
+    border: none;
+}
 
-    &__check-input:checked+&__check-svgicon &__check-useicon {
-        display: block;
-    }
+.modal-form-checkbox-icon:checked+.modal-form-checkbox-icon .modal__check-useicon {
+    display: block;
+}
 
-    &__check-text {
-        color: var(--secondary-text-color);
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-    }
+.modal__check-text {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
 
-    &__check-link {
-        color: var(--active-link-color);
-        text-decoration: underline;
-    }
+.modal__check-link {
+    color: var(--active-link-color);
+    text-decoration: underline;
+}
 
-    &__button-send {
-        @extend %standart-button;
+.modal__button-send {
+    @extend %standart-button;
 
-        font-weight: bold;
-        margin: auto;
-        width: 200px;
-        height: 50px;
-        letter-spacing: 0.06em;
-        display: block;
-    }
+    font-weight: bold;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.06em;
+    display: block;
+}
 
-    &__button-send:hover,
-    &__button-send:focus {
-        background-color: var(--button-hover-color);
-    }
+.modal__button-send:hover,
+.modal__button-send:focus {
+    background-color: var(--button-hover-color);
 }
