@@ -32,7 +32,6 @@
 
     &__link {
         display: block;
-        padding-bottom: 9px;
     }
 
     &__link--map {
@@ -44,4 +43,8 @@
         line-height: 1.71;
         color: var(--passive-link-color-footer);
     }
+    .footer-subject{
+            margin-bottom: 9px;
+    }
+    
 }

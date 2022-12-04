@@ -1,5 +1,6 @@
 .clients {
     @extend .section;
+    padding: 0;
     &__title {
         display: block;
         font-weight: bold;

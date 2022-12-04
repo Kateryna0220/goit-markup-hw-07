@@ -66,8 +66,8 @@
     }
 
     &__input-icon {
-        width: 18px;
-        height: 18px;
+        width: 15px;
+        height: 15px;
         position: absolute;
         fill: currentColor;
         text-align: center;
@@ -121,7 +121,7 @@
     }
 
     &__label {
-        padding-bottom: 4px;
+        margin-bottom: 4px;
         text-align: left;
         color: var(--secondary-text-color);
         display: block;

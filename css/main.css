@@ -547,18 +547,15 @@ img {
 
 body {
   font-family: var(--main-font);
-  font-style: normal;
   font-size: 14px;
   line-height: 1.14;
-  margin: auto;
   background: var(--main-background-color);
-  text-align: center;
 }
 
 button {
   padding: 0;
   border: none;
-  font: inherit;
+  font-family: inherit;
   color: inherit;
   background: transparent;
   cursor: pointer;
@@ -570,26 +567,18 @@ main {
 }
 
 .container, .footer__container, .team__container, .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: auto;
   padding: var(--standart-94px) var(--standart-15px);
-  text-align: center;
   max-width: 1200px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .section, .contacts, .portfolio, .backdrop, .clients, .team, .work, .features, .hero, .section__studio {
-  display: block;
-  margin: auto;
-  max-width: 1200px;
   padding: var(--standart-94px) var(--standart-15px);
   text-align: center;
-  width: 100%;
 }
 
 .section-title {
@@ -798,9 +787,9 @@ main {
   text-transform: uppercase;
   color: var(--white-color);
   width: 696px;
-  height: 120px;
   margin: auto;
   margin-bottom: var(--standart-30px);
+  font-family: var(--main-font);
 }
 .hero__button {
   width: 216px;
@@ -887,8 +876,17 @@ main {
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0;
   width: 100%;
-  padding: 27px 0;
+  height: 70px;
   color: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -941,6 +939,9 @@ main {
   color: var(--secondary-text-color);
 }
 
+.clients {
+  padding: 0;
+}
 .clients__title {
   display: block;
   font-weight: bold;
@@ -1060,8 +1061,8 @@ main {
   letter-spacing: 0.01em;
 }
 .modal__input-icon {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   position: absolute;
   fill: currentColor;
   text-align: center;
@@ -1103,7 +1104,7 @@ main {
   outline: none;
 }
 .modal__label {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   text-align: left;
   color: var(--secondary-text-color);
   display: block;
@@ -1319,12 +1320,10 @@ main {
   margin-top: var(--standart-30px);
   text-align: left;
   background: var(--white-color);
-  outline: 1px solid var(--border-color-outline);
 }
 
-.product__item:hover,
-.product__item:focus {
-  border: 1px solid #eeeeee;
+.product__item-content-link:hover,
+.product__item-content-link:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1340,6 +1339,9 @@ main {
 .product-content {
   padding: 20px 24px;
   display: block;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
 .product-content__heading {
   display: block;
@@ -1348,7 +1350,7 @@ main {
   line-height: 2;
   color: var(--main-text-color);
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .product-content__text {
   display: block;
@@ -1408,7 +1410,6 @@ main {
 }
 .footer-contacts__link {
   display: block;
-  padding-bottom: 9px;
 }
 .footer-contacts__link--map {
   color: var(--white-color);
@@ -1417,6 +1418,9 @@ main {
   font-weight: normal;
   line-height: 1.71;
   color: var(--passive-link-color-footer);
+}
+.footer-contacts .footer-subject {
+  margin-bottom: 9px;
 }
 
 .form-mailing {

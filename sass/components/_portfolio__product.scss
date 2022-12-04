@@ -39,13 +39,11 @@
 
     text-align: left;
     background: var(--white-color);
-    outline: 1px solid var(--border-color-outline);
     @extend %standart-transition--box-shadow;
 }
 
-.product__item:hover,
-.product__item:focus {
-    border: 1px solid #eeeeee;
+.product__item-content-link:hover,
+.product__item-content-link:focus {
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -60,6 +58,9 @@
 .product-content {
     padding: 20px 24px;
     display: block;
+    border-left: 1px solid #EEEEEE;;
+    border-bottom: 1px solid #EEEEEE;;
+    border-right: 1px solid #EEEEEE;;
 
     &__heading {
         display: block;
@@ -68,7 +69,7 @@
         line-height: 2;
         color: var(--main-text-color);
         letter-spacing: 0.06em;
-        padding-bottom: 4px;
+        margin-bottom: 4px;
     }
 
     &__text {
