@@ -92,7 +92,7 @@ main {
 .container {
     margin: auto;
     padding: var(--standart-94px) var(--standart-15px);
-    max-width: 1200px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -102,6 +102,7 @@ main {
 .section {
     padding: var(--standart-94px) var(--standart-15px);
     text-align: center;
+    margin: 0 auto;
 }
 
 .section-title {

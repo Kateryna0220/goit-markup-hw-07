@@ -7,6 +7,7 @@
     &__container {
         @extend .container;
         padding: 24px var(--standart-15px) 25px;
+        display: flex;
     }
 }
 

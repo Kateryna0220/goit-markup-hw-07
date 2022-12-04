@@ -58,9 +58,9 @@
 .product-content {
     padding: 20px 24px;
     display: block;
-    border-left: 1px solid #EEEEEE;;
-    border-bottom: 1px solid #EEEEEE;;
-    border-right: 1px solid #EEEEEE;;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 
     &__heading {
         display: block;
@@ -80,4 +80,9 @@
         color: var(--secondary-text-color);
         letter-spacing: 0.03em;
     }
+}
+.product__wrapper-img{
+width: 100%;
+    height: auto;
+    display: block;
 }
