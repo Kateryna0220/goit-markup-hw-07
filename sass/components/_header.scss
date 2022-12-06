@@ -3,6 +3,7 @@
     background: var(--white-color);
     position: relative;
     align-content: center;
+    height: 80px;
 
     &__container {
         @extend .container;
@@ -39,8 +40,8 @@
         border-radius: 2px;
         position: absolute;
         left: 0;
-        margin-top: 45px;
-        display: inline-block;
+        margin-top: 51px;
+        display:inline-block;
     }
 
     &__item:not(:last-child) {

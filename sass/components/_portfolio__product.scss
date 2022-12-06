@@ -36,7 +36,6 @@
     flex-basis: calc(100% / 3 - var(--standart-30px));
     margin-left: var(--standart-30px);
     margin-top: var(--standart-30px);
-
     text-align: left;
     background: var(--white-color);
     @extend %standart-transition--box-shadow;
@@ -84,5 +83,8 @@
 .product__wrapper-img{
 width: 100%;
     height: auto;
+    display: block;
+}
+.product__item-content-link{
     display: block;
 }

@@ -47,5 +47,7 @@
     .footer-subject{
             margin-bottom: 9px;
     }
-    
+}
+.footer-subject:last-child {
+    margin-bottom: 0px;
 }
