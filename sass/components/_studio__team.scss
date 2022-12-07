@@ -8,6 +8,8 @@
     &__container {
         @extend .container;
         display: block;
+        padding-top: var(--standart-94px);
+        padding-bottom: var(--standart-94px);
     }
 
     &__set {

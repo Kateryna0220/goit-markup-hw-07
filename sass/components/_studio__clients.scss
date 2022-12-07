@@ -1,6 +1,5 @@
 .clients {
     @extend .section;
-    padding: 0;
     &__title {
         display: block;
         font-weight: bold;
@@ -14,11 +13,11 @@
         margin: 0;
         list-style: none;
         display: flex;
+        margin-top: var(--standart-50px);
     }
 
     &__item {
         @extend %standart-transition--color_and_border;
-        margin-top: var(--standart-50px);
         background: var(--white-color);
     }
 

@@ -574,7 +574,7 @@ main {
   margin-left: auto;
 }
 
-.section, .contacts, .portfolio, .backdrop, .clients, .team, .work, .features, .hero, .section__studio {
+.section, .contacts, .backdrop, .clients, .team, .work, .features, .hero, .section__studio {
   padding: var(--standart-94px) var(--standart-15px);
   text-align: center;
   margin: 0 auto;
@@ -709,8 +709,6 @@ main {
   width: 20px;
   height: 20px;
   fill: currentColor;
-  text-align: center;
-  margin: 12px;
 }
 
 .footer-social {
@@ -738,6 +736,15 @@ main {
   color: var(--social-background-footer-color);
 }
 .footer-social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--social-passive-footer-color);
   background: var(--social-background-footer-color);
 }
@@ -756,6 +763,15 @@ main {
   line-height: 0;
 }
 .team-social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--grey-color);
   background: var(--social-background-main-color);
 }
@@ -901,6 +917,8 @@ main {
 }
 .team__container {
   display: block;
+  padding-top: var(--standart-94px);
+  padding-bottom: var(--standart-94px);
 }
 .team__set {
   padding: 0;
@@ -942,9 +960,6 @@ main {
   color: var(--secondary-text-color);
 }
 
-.clients {
-  padding: 0;
-}
 .clients__title {
   display: block;
   font-weight: bold;
@@ -959,9 +974,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: var(--standart-50px);
 }
 .clients__item {
-  margin-top: var(--standart-50px);
   background: var(--white-color);
 }
 .clients__link {
@@ -1253,6 +1268,11 @@ main {
 .modal__button-send:hover,
 .modal__button-send:focus {
   background-color: var(--button-hover-color);
+}
+
+.portfolio {
+  padding: var(--standart-94px);
+  text-align: center;
 }
 
 .filters {

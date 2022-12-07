@@ -14,8 +14,7 @@
         width: 20px;
         height: 20px;
         fill: currentColor;
-        text-align: center;
-        margin: 12px;
+
     }
 }
 
@@ -42,9 +41,13 @@
     }
 
     &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @extend %standart-transition--color_and_background;
         color: var(--social-passive-footer-color);
         background: var(--social-background-footer-color);
+
     }
 
     &__link:hover,
@@ -60,6 +63,9 @@
     line-height: 0;
 
     &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @extend %standart-transition--color_and_background;
         color: var(--grey-color);
         background: var(--social-background-main-color);
