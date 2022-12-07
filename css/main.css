@@ -406,7 +406,7 @@ template {
   /*дополнительный шрифт*/
 }
 
-.contact--map:hover,
+.footer-contacts__link:hover, .footer-contacts__link:focus, .contact--map:hover,
 .contact--map:focus, .contact--map, .header-contacts__link:hover, .header-contacts__link:focus, .header-contacts__item:hover, .header-contacts__item:focus, .header-contacts__link, .header-contacts__item, .header-nav__link:hover, .header-nav__link:focus, .header-nav__link {
   -webkit-transition: color var(--standart-timer) var(--standart-timing-function);
   transition: color var(--standart-timer) var(--standart-timing-function);
@@ -567,14 +567,11 @@ main {
 }
 
 .container, .footer__container, .team__container, .header__container {
-  margin: auto;
-  padding: var(--standart-94px) var(--standart-15px);
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  padding: var(--standart-94px) var(--standart-15px);
 }
 
 .section, .contacts, .portfolio, .backdrop, .clients, .team, .work, .features, .hero, .section__studio {
@@ -1429,6 +1426,9 @@ main {
 }
 .footer-contacts__link {
   display: block;
+}
+.footer-contacts__link:hover, .footer-contacts__link:focus {
+  color: var(--active-link-color);
 }
 .footer-contacts__link--map {
   color: var(--white-color);

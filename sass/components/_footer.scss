@@ -34,6 +34,10 @@
     &__link {
         display: block;
     }
+    &__link:hover,
+    &__link:focus {
+    @extend %standart-transition--color;
+    color: var(--active-link-color);}
 
     &__link--map {
         color: var(--white-color);
